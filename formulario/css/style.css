@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fundo{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /*Video se ajustar na tela*/
+    z-index: -1; /*Video ficar no background*/
+    position: fixed; /*Fixa o video na tela inteira*/
+}
+
+.central{
+    background: rgba(255, 255, 255, 0.15);
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;/*Bordas arredondas*/
+    backdrop-filter: blur(5px);/*Desfocar o fundo*/
+    box-shadow: 1px 1px 8px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.central span{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.central #real{
+    width: 320px;
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.central #real:focus{ /*focus = muda quado se clica*/
+    background: lightgray;
+}
+
+.central #botao{
+    background: green;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;/*Deixa a letra maiúscula*/
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.central #botao:hover{
+    color: yellow;
+}
