@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6441A5, #2a73ff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Container principal */
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h2 {
+  color: #444;
+  margin: 30px 0 15px;
+  font-size: 22px;
+}
+
+/* Formulário de veículos */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+form input {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border-color: #2a73ff;
+  outline: none;
+}
+
+form button {
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #6441A5, #2a73ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table thead {
+  background: #6441A5;
+  color: white;
+}
+
+table th, table td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* Botões de ação */
+.action-btn {
+  padding: 6px 10px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.action-btn.edit {
+  background: #2a73ff;
+  color: white;
+}
+
+.action-btn.delete {
+  background: #ff4444;
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.85;
+}
+
+/* Botão sair */
+button[onclick="logout()"] {
+  margin-top: 25px;
+  background: #ff4444;
+  width: 10%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button[onclick="logout()"]:hover {
+  opacity: 0.85;
+}

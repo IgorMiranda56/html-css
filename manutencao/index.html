@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Login</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div class="container" id="loginPage">
+  <h1>Bem-vindo</h1>
+  <p class="subtitle">Faça login para continuar</p>
+  
+  <form id="loginForm">
+    <div class="form-group">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="loginSenha" placeholder="Senha" required>
+    </div>
+    <button type="submit">Entrar</button>
+  </form>
+  
+  <div class="links">
+    <a href="javascript:void(0)" onclick="showPage('forgotPasswordPage')">Esqueceu sua senha?</a>
+    <a href="javascript:void(0)" onclick="showPage('registerPage')">Cadastre-se</a>
+  </div>
+</div>
+
+<!-- Register Page -->
+<div class="container" id="registerPage" style="display:none;">
+  <h1>Cadastre-se</h1>
+  <p class="subtitle">Preencha os dados para criar sua conta</p>
+  
+  <form id="registerForm">
+    <div class="form-group">
+      <input type="text" id="fullName" placeholder="Nome completo" required>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="password" placeholder="Senha" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
+    </div>
+    <button type="submit">Criar conta</button>
+  </form>
+
+  <div class="links">
+    <a href="javascript:void(0)" onclick="showPage('loginPage')">Já tem uma conta? Faça login</a>
+  </div>
+</div>
+
+<!-- Forgot Password Page -->
+<div class="container" id="forgotPasswordPage" style="display:none;">
+  <h1>Recuperar Senha</h1>
+  <p class="subtitle">Digite seu email para recuperar a conta</p>
+  
+  <form id="forgotPasswordForm">
+    <div class="form-group">
+      <input type="email" id="recoveryEmail" placeholder="Digite seu email" required>
+    </div>
+    <button type="submit">Enviar instruções</button>
+  </form>
+  
+  <div class="links">
+    <a href="javascript:void(0)" onclick="showPage('loginPage')">Voltar ao login</a>
+  </div>
+</div>
+
+<script src="assets/js/login.js"></script>
+</body>
+</html>
